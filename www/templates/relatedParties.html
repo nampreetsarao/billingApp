@@ -1,0 +1,10 @@
+<ion-view title="Related Parties" id="page4" cache-view="false">
+  <ion-content padding="true" class="has-header">
+    <p id="aboutPSD22-markdown2" style="color:#000000;" class=" " ng-repeat="x in billingAccount.data.relatedParty">
+              <strong>{{x.role}}</strong>
+              <a onclick="window.open('{{x.href}}', '_system', 'location=yes'); return false;">link</a>.</p>
+              <!-- <a ng-click="window.cordova.InAppBrowser.open('{{x.link}}', '_blank', 'location=no,clearsessioncache=yes,clearcache=yes,toolbar=yes');">link</a>.</p> -->
+    </p>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,30 @@
+<ion-view title="Billing Details" id="page2" cache-view="false">
+  <ion-content padding="true" class="has-header">
+    <div class="item item-body" id="billingDetails-list-item-container4">
+      <ion-list id="billingDetails-list2">
+          <ion-item style="" id="profile-list-item9" class="item-icon-left">
+                <i class="icon ion-happy-outline"></i>
+                 {{billingAccount.data.name}}
+            </ion-item>
+            <ion-item style="" id="profile-list-item10" class="item-icon-left ">
+                <i class="icon ion-iphone"></i>{{billingAccount.data.ratingType}}</ion-item>
+
+            <ion-item style="" id="profile-list-item12" class="item-icon-left  ">
+                <i class="icon ion-ionic"></i>Customer ID: {{billingAccount.data.customerAccount.id}} </ion-item>
+            <ion-item style="" id="profile-list-item12" class="item-icon-left  ">
+                <i class="icon ion-cash"></i>Amount Due: {{billingAccount.data.billingAccountBalance[0].amount}} {{billingAccount.data.currency.currencyCode}}  </ion-item>
+
+            <ion-item style="" id="profile-list-item12" class="item-icon-left  ">
+                    <i class="icon ion-calendar"></i>Billing Period Start Date: {{billingAccount.data.billingAccountBalance[0].validFor.startPeriod | date:'dd/MM/yyyy'}} </ion-item>
+
+            <ion-item style="" id="profile-list-item12" class="item-icon-left  ">
+                    <i class="icon ion-calendar"></i>Billing Period End Date: {{billingAccount.data.billingAccountBalance[0].validFor.endPeriod | date:'dd/MM/yyyy'}} </ion-item>
+            <ion-item style="" id="profile-list-item12" class="item-icon-left  item-text-wrap ">
+                    <i class="icon ion-calendar"></i>Billing Lifecycle: {{billingAccount.data.customerBillingCycleSpecification.name}} </ion-item>
+
+
+      </ion-list>
+
+    </div>
+  </ion-content>
+</ion-view>
