@@ -3,8 +3,10 @@
   "app_id": "557832ed",
   "proxies": [
     {
+
+
       "path": "/billingAccount/15",
-      "proxyUrl": "http://env-7729277.j.layershift.co.uk/DSBillingManagement/api/billingManagement/v2/"
+      "proxyUrl": "http://localhost:8096/DSBillingManagement/api/billingManagement/v2"
     }
   ]
 }
